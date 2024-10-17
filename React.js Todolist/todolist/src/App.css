@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/xuan-ha-thu-dong-roi-lai-xuan.jpg'); /* Đường dẫn đến ảnh */
+  background-size: cover; /* Đảm bảo ảnh phủ kín toàn bộ body */
+  background-position: center; /* Căn giữa ảnh */
+ /* background-repeat: no-repeat; /* Không lặp lại ảnh */
+  height: 100vh; /* Chiều cao 100% của viewport */
+  width: 100vw; /* Chiều rộng 100% của viewport */
+  /*overflow: hidden; /* Ẩn thanh cuộn nếu cần */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #02a65a;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #f3f7f5;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #111211;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #0f0e0e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #049d72;
+  color: #121010;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #03af7e;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #71e5b7;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
